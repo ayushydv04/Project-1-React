@@ -1,15 +1,17 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
+import Navbar from './Navbar'
 
-import logo from "./assets/logo.png"
+
 
 
 const Header = () => {
     return (
         <>
-        <NavLink to="/">
-            <img src="./public/logo.png" alt="" />
-        </NavLink>
+            <NavLink to="/">
+                <img src="./images/logo.png" alt="logo" width={100} />
+            </NavLink>
+            <Navbar />
         </>
     )
 }
